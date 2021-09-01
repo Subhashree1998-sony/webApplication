@@ -13,7 +13,7 @@ namespace studentmanagement.Controllers
     [Route("[controller]/[action]")]
     public class studentController : Controller
     {
-        private ILogger<studentController> _logger;
+        private ILogger<studentController> _logger; 
 
         IBusinesslogic _businesslogic;
         public studentController(ILogger<studentController> logger, IBusinesslogic businesslogic)

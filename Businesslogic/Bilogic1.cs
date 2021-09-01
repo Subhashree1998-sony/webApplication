@@ -62,6 +62,7 @@ namespace businesslogic
         }
         public studentEntity getRandomStudent()
         {
+
             entityList = dbctx.studentEntity.ToList();
            int num = new  Random().Next(0,entityList.Count-1);
 
