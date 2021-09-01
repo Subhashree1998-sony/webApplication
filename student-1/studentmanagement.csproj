@@ -1,0 +1,22 @@
+using system;
+ using studententity;
+ using studentbiologic;
+ 
+ 
+ 
+static void main(string[] args)
+{
+
+IEnumerable<student> studentquery1 =
+            from student in pg.students
+            where student.ID > 1
+            select student;
+        Console.WriteLine("query: select range_variable");
+        Console.WriteLine("name :ID");
+        foreach (student_1 s in studentquery1)
+        {
+            Console.WriteLine(s.tostring());
+        }
+        Console.ReadLine();
+
+    }
